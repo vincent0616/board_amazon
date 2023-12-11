@@ -1,0 +1,578 @@
+@font-face {
+    font-family: 'JSongMyung-Regular-KO';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Pretendard';
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+input, textarea{
+    font-family: 'Pretendard';
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+input[type=submit]{
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+}
+
+header .nav{
+    display: flex;
+    align-items: center;
+    width: 1280px;
+    height: 60px;
+    margin: 0 auto;
+
+}
+
+header .nav .logo{
+    background: url("../img/logo.png") center center no-repeat;
+    display: block;
+    width: 150px;
+    height: 21px;
+}
+
+header .nav .menu{
+    display: flex;
+    margin: 0 auto;
+    margin-left: 5%;
+    width: 140px;
+    justify-content: space-between;
+}
+
+header .nav .menu li{
+    list-style: none;
+    font-size: 14px;
+}
+
+header .nav .sign_wrap{
+    display: flex;
+    width: 287px;
+    justify-content: space-between;
+}
+
+header .nav .sign_wrap > a{
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 8px 22px;
+    font-size: 13px;
+}
+
+header .nav .sign_wrap #log_btn{
+
+}
+
+header .nav .sign_wrap #reg_btn{
+    background: dodgerblue;
+    color: #fff;
+    border: none;
+}
+
+section{
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.sec_wrap .sec_tit{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.sec_wrap .bd_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec_wrap .bd_container .bd_wrap{
+    width: 45%;
+}
+
+.sec_wrap .bd_container .bd_wrap .bd_tit{
+    display: block;
+    width: calc(100% - 40px);
+    height: 40px;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 37px;
+}
+
+.sec_wrap .bd_container .bd_wrap .bd_lst{
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.sec_wrap .bd_container .bd_wrap .bd_lst:last-child{
+    border-bottom: none;
+}
+
+.sec_wrap .bd_container .bd_wrap .bd_lst > li{}
+
+.sec_wrap .bd_container .bd_wrap .bd_lst .bd_wrap_child{}
+
+.sec_wrap .bd_container .bd_wrap .bd_lst .bd_wrap_child .bd_writer_info{}
+
+.sec_wrap .bd_container .bd_wrap .bd_lst .bd_wrap_child .bd_title_info{}
+
+.sec_wrap .bd_container .bd_wrap .bd_lst .bd_wrap_child .bd_title_info a{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.login_container{
+    width: 1280px;
+    height: 860px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container .login_wrap{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container .login_wrap .login_tit{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.login_container .login_wrap .go_reg_wrap a{
+    color: rgb(16, 109, 202);
+}
+
+.login_container .login_wrap .login_frm_wrap{
+        width: 50%;
+        margin-bottom: 30px;
+}
+
+.login_container .login_wrap .login_frm_wrap form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login_container .login_wrap .login_frm_wrap form input{
+    outline: none;
+    border: 1px solid #ddd;
+    height: 35px;
+    width: calc(100% - 24px);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.login_container .login_wrap .login_frm_wrap form .frm_pw{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.login_container .login_wrap .login_frm_wrap form .frm_nic{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.login_container .login_wrap .login_frm_wrap form #submit_btn{
+    width: 320px;
+    height: 50px;
+    border: none;
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reg_form .login_wrap .login_frm_wrap form .frm_pw{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.login_container .login_wrap .term_wrap span{
+    padding: 0 10px;
+}
+
+.sec_wrap .bd_lst_container .bd_wrap table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.sec_wrap .bd_lst_container .bd_wrap table tr .bd_lst_tit{
+    width: 60%;
+    text-align: left;
+    padding: 5px 30px;
+}
+
+.sec_wrap .bd_lst_container .bd_wrap table thead{
+    width: 100%;
+    height: 40px;
+}
+
+.sec_wrap .bd_lst_container .bd_wrap table thead tr{
+    border-bottom: 2px solid #2b2b2b;
+}
+
+.sec_wrap .bd_lst_container .bd_wrap table tbody tr{
+    border-top: 1px solid #000;
+    height: 50px;
+}
+
+.notice_wrap p{
+    background-color:dodgerblue;
+    color:#fff;
+}
+
+.sec_bd_wrap{
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
+.sec_bd_wrap .sec_bd_desc{
+    margin-bottom: 70px;
+}
+
+.sec_bd_wrap .sec_bd_desc .sec_bd_tit{
+    margin-bottom: 10px;
+    color: #2b2b2b;
+}
+
+/* 글쓰기 버튼 */
+
+.sec_bd_lst_menu form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec_bd_lst_menu form input{
+    border: none;
+    background-color: dodgerblue;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* 페이징 리스트 */
+.sec_bd_paging{
+    margin-top: 50px;
+}
+
+.sec_bd_paging ul{
+    display: flex;
+    justify-content: center;
+
+}
+.sec_bd_paging ul li{
+    border: 1px solid #ddd;
+}
+
+.sec_bd_paging ul li a{
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: #595959;
+}
+
+.sec_bd_paging ul li.cur_page{
+    background-color: #eee;
+}
+
+.sec_bd_paging ul li.cur_page a{
+    color: dodgerblue;
+}
+
+.sec_bd_wrap .spr_bd_context .bd_tit_wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+
+
+.sec_wrap .sec_bd_v_tit{
+    font-size: 18px;
+    color: #4b4b4bda;
+}
+
+.sec_bd_wrap .sec_bd_v_desc{
+    margin-bottom: 5px;
+}
+
+.sec_bd_wrap .spr_bd_context .bd_tit_wrap .bd_lt_tit .bd_tit{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.sec_bd_wrap .spr_bd_context .bd_tit_wrap .bd_lt_tit .bd_lt_wr_info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    width: 280px;
+}
+
+.sec_bd_wrap .spr_bd_context .bd_tit_wrap .bd_lt_tit .bd_lt_wr_info .bd_writer_tier{
+    padding-left: 0;
+
+}
+
+.sec_bd_wrap .spr_bd_context .bd_tit_wrap .bd_lt_tit .bd_lt_wr_info .bd_wr_time{
+    color: #666666;
+}
+
+.sec_bd_wrap .spr_bd_context .bd_tit_wrap .bd_rt_tit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+}
+
+.sec_bd_wrap .spr_bd_context .bd_tit_wrap .bd_rt_tit i{
+    font-size: 22px;
+}
+
+.sec_bd_wrap .spr_bd_context .bd_tit_wrap .bd_rt_tit span{
+    font-size: 18px;
+}
+
+.sec_bd_wrap .spr_bd_context .bd_cont_wrap{
+    padding: 20px 0;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+    height: 500px;
+}
+
+.sec_bd_wrap .spr_bd_context .bd_cont_wrap .bd_cont{
+    font-size: 16px;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_tit{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #2b2b2b;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_input_container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_input_container .bd_com_input_wrap{
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_input_container .bd_com_input_wrap .user_ico_wrap{
+    height: 75%;
+    margin-right: 30px;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_input_container .bd_com_input_wrap .user_ico_wrap .user_ico{
+    background: url("../img/user_ico.png") center center no-repeat;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_input_container .bd_com_input_wrap textarea{
+    border: 1px solid #ddd;
+    width: 77%;
+    height: 60%;
+    color: #000;
+    resize: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_input_container .bd_com_input_wrap input{
+    border: none;
+    background-color: dodgerblue;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-size: 15px;
+    outline: none;
+}
+
+/* 댓글 리스트 */
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container{
+    margin-top: 60px;
+}
+
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li .bd_com_lst{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li .bd_com_lst .user_ico_wrap{
+   display: flex;
+   align-items: center;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li .bd_com_lst .user_ico_wrap .user_ico{
+    background: url("../img/user_ico1.jpg") center center no-repeat;
+    width: 60px;
+    aspect-ratio: 1/1;
+    display: block;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li:nth-child(2) .bd_com_lst .user_ico_wrap .user_ico{
+    background: url("../img/user_ico3.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li .bd_com_lst .user_ico_wrap .com_user_info .com_user_name{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li .bd_com_lst .user_ico_wrap .com_user_info{
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li .bd_com_lst .user_ico_wrap .com_user_info .com_user_wr_time{
+    color: #666666;
+    padding-left: 5px;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li .bd_com_lst .bd_com_txt_wrap{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sec_bd_wrap .bd_comment_wrap .bd_com_lst_container .bd_com_lst_wrap li .bd_com_lst .bd_com_txt_wrap .bd_com_tit{
+    font-size: 14px;
+}
+
+/* 게시글 작성 */
+
+.sec_bd_wrap .sec_bd_input_tit form .frm_input,
+.sec_bd_wrap .sec_bd_input_tit form .frm_txtarea
+{
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:10px;
+    font-size: 15px;
+}
+
+.sec_bd_wrap .sec_bd_input_tit form .frm_input{
+    height: 20px;
+}
+
+.sec_bd_wrap .sec_bd_input_tit form .frm_txtarea{
+    resize: none;
+    height: 380px;
+}
+
+.sec_bd_wrap .sec_bd_input_tit form .bd_input_tit_wrap .frm_input_desc,
+.sec_bd_wrap .sec_bd_input_tit form .bd_input_cont_wrap .frm_input_desc{
+    margin-bottom: 10px;
+}
+
+.sec_bd_wrap .sec_bd_input_tit form .bd_input_submit_wrap{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.sec_bd_wrap .sec_bd_input_tit form .bd_input_submit_wrap input{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sec_bd_wrap .sec_bd_input_tit form .frm_submit{
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+
+}
+
+.sec_bd_wrap .sec_bd_input_tit form .frm_lst{
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    background-color: #fff;
+    margin-right: 20px;
+}
+

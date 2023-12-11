@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header th:replace="header::header"></header>
+<section>
+    <div class="sec_wrap sec_bd_wrap">
+        <div class="sec_bd_v_desc">
+            <p class="sec_tit sec_bd_v_tit">스프링 게시판</p>
+        </div>
+        <div class="spr_bd_context">
+            <div class="bd_tit_wrap">
+                <div class="bd_lt_tit">
+                    <p class="bd_tit"></p>
+                    <div class="bd_lt_wr_info">
+                        <span class="bd_writer"></span>
+                        <span class="bd_writer_tier">Bronze</span>
+                        <span class="bd_wr_time"></span>
+                    </div>
+                </div>
+                <div class="bd_rt_tit">
+                    <div class="bd_info_thup">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span class="bd_thup_cnt">1</span>
+                    </div>
+                    <div class="bd_info_thdn">
+                        <i class="fa-regular fa-thumbs-down"></i>
+                        <span class="bd_thdn_cnt">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bd_cont_wrap">
+                <span class="bd_cont"></span>
+            </div>
+        </div>
+        <div class="bd_comment_wrap">
+            <p class="bd_com_tit">2개의 댓글</p>
+            <div class="bd_com_input_container">
+                <div class="bd_com_input_wrap">
+                    <div class="user_ico_wrap">
+                        <a href="#" class="user_ico"></a>
+                    </div>
+                    <textarea name="memberComment" id="memberComment" cols="30" rows="10" class="bd_com_txtarea" placeholder="댓글을 쓰려면 로그인이 필요합니다."></textarea>
+                    <input type="submit" value="댓글 쓰기">
+                </div>
+            </div>
+            <div class="bd_com_lst_container">
+                <ul class="bd_com_lst_wrap">
+                    <li>
+                        <div class="bd_com_lst">
+                            <div class="user_ico_wrap">
+                                <a href="#" class="user_ico"></a>
+                                <div class="com_user_info">
+                                    <p class="com_user_name">고양이애호가 임꺽정</p>
+                                    <span class="com_user_tier">Bronze</span>
+                                    <span class="com_user_wr_time">약 3시간전</span>
+                                </div>
+                            </div>
+                            <div class="bd_com_txt_wrap">
+                                <span class="bd_com_txt">저렇게 만들면 컴파일 에러가 발생하지는 않겠죠?
+                                    코드상으로는 문제가 없어보입니다만.. 한번 컴파일 해봐야겠네요.
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bd_com_lst">
+                            <div class="user_ico_wrap">
+                                <a href="#" class="user_ico"></a>
+                                <div class="com_user_info">
+                                    <p class="com_user_name">파이썬으로 세계정복</p>
+                                    <span class="com_user_tier">Silver</span>
+                                    <span class="com_user_wr_time">약 1시간전</span>
+                                </div>
+                            </div>
+                            <div class="bd_com_txt_wrap">
+                                <span class="bd_com_txt">좋은정보 감사합니다.<br>
+                                    짧은지식을 보충할 수 있는 좋은 계기가 되었습니다.
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer th:replace="footer::footer"></footer>
+</body>
+</html>

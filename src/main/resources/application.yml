@@ -1,0 +1,31 @@
+# database 연동 설정
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 499471975239-hela3iadul1r132fi9qs88b28udknvqe.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_board
+    username: root
+    password: 1234
+  thymeleaf:
+    cache: false
+
+  # spring data jpa 설정
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  server:
+    session:
+      tracking-modes: cookie
+
